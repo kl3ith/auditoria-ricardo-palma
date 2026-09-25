@@ -78,7 +78,7 @@ h2 em{font-style:normal;color:var(--faint);font-weight:600;letter-spacing:.1em}
 .chk{display:flex;justify-content:space-between;align-items:flex-start;gap:26px;padding:20px 0;border-bottom:1px solid var(--line2)}
 .chk .nm{font-size:17px;font-weight:700;color:var(--ink)}
 .chk .ob{font-size:14.5px;color:var(--muted);margin-top:5px;line-height:1.55;max-width:620px}
-.badge{display:flex;align-items:center;gap:9px;flex:none;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;white-space:nowrap;padding-top:3px}
+.badge{display:flex;align-items:flex-start;gap:9px;flex:none;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;white-space:normal;max-width:240px;line-height:1.4;padding-top:3px}.badge .dot{margin-top:3px}
 .badge .dot{width:11px;height:11px;border-radius:50%;flex:none}
 
 /* ---------- benchmark: 3 tarjetas ---------- */
@@ -315,55 +315,55 @@ const D = {
     {
       "n": "Tus opiniones en Google",
       "estado": "ok",
-      "label": "5,0 con 22 opiniones, y las 22 contestadas",
+      "label": "5,0 y las 22 contestadas",
       "obs": "Todas son de cinco estrellas, todas llegaron en los últimos meses y a cada una le respondiste. Hablan de alivio en cuello, espalda, rodilla y pies, y varias son de viajeros: uno escribió que te va a buscar cada vez que vuelva a Panamá. Google toma en cuenta cuántas opiniones tienes, qué tan recientes son y si las respondes para decidir a quién muestra en el mapa, así que esto no es un detalle: es lo mejor que tienes."
     },
     {
       "n": "Tu ficha de Google, viva y bilingüe",
       "estado": "ok",
-      "label": "Publicaciones en agosto y septiembre, en español e inglés",
+      "label": "Activa y en dos idiomas",
       "obs": "Publicas en tu ficha con frecuencia, en los dos idiomas, y los botones de Reservar y Sitio web abren tu WhatsApp. Pocos negocios usan esas publicaciones. Para un turista que busca desde su hotel, encontrar información en inglés y un botón para escribirte de una vez es justo lo que necesita."
     },
     {
       "n": "WhatsApp como puerta de entrada",
       "estado": "ok",
-      "label": "Funciona desde Google y desde tu bio",
+      "label": "Funciona desde Google y tu bio",
       "obs": "Los dos enlaces abren tu WhatsApp Business, que además tiene catálogo. Para un servicio que se agenda conversando, es el destino correcto, y es también el que mejor funciona con la pauta de Meta: se le puede pedir a Meta que busque gente que te escriba, sin necesidad de tener una página web."
     },
     {
       "n": "Tu constancia en Instagram",
       "estado": "ok",
-      "label": "12 publicaciones en un mes, unas tres por semana",
+      "label": "Unas tres por semana",
       "obs": "Entre el 21 de agosto y el 22 de septiembre publicaste sin dejar semanas en blanco: consejos sobre calambres y duelo, los beneficios del masaje en el hotel, tu paso por la feria de la USMA y el congreso de mentores. Sostener ese ritmo solo es lo más difícil de las redes, y ya lo tienes."
     },
     {
       "n": "Lo que recibe cada publicación",
       "estado": "warn",
-      "label": "Alrededor de 3 me gusta y 1 comentario en todo el mes",
+      "label": "Unos 3 me gusta cada una",
       "obs": "Sobre 67 seguidores, 3 me gusta no habla mal de tu contenido, habla de cuánta gente lo ve. Instagram muestra cada publicación primero a una parte de tus seguidores y, si en las primeras horas nadie reacciona, deja de mostrarla. Con una comunidad tan pequeña, el techo es bajo desde el arranque. Casi todo son imágenes fijas; los videos cortos son el formato que Instagram más les muestra a personas que todavía no te siguen."
     },
     {
       "n": "Tu nombre, en cuatro versiones",
       "estado": "warn",
-      "label": "Cambia según dónde te busquen",
+      "label": "Cambia según la red",
       "obs": "En Google eres “Relaxation Massage after flight | Ricardo Palma”, en WhatsApp “Jet Lag Recovery Massage therapist / Masoterapeuta Ricardo Palma”, en Instagram “Ricardo Palma I Masajes a Domicilio Panamá” y en Facebook “Ricardo Palma”. Lo que se repite es tu nombre, y es también lo que tus clientes escriben en las opiniones: “Ricardo es el mejor”. ¿Cómo te presentas en tu tarjeta? Te lo preguntamos porque Google pide que el nombre de la ficha sea el nombre real del negocio, sin frases descriptivas, y agregarlas puede llevar a que suspendan la ficha, y con ella se esconderían tus 22 opiniones."
     },
     {
       "n": "La categoría principal en Google",
       "estado": "warn",
-      "label": "Aparece como “Terapeuta de drenaje linfático”",
+      "label": "Drenaje linfático",
       "obs": "Tu nombre habla de masaje relajante, tu WhatsApp de recuperación del jet lag y tus opiniones de alivio del dolor, pero la categoría que Google muestra debajo de tu nombre es drenaje linfático. ¿Es el servicio que más quieres vender? Te lo preguntamos porque la categoría principal es una de las señales que más pesan para decidir en qué búsquedas del mapa apareces."
     },
     {
       "n": "Un enlace que no abre",
       "estado": "warn",
-      "label": "El Instagram que aparece en tu ficha de Google",
+      "label": "El Instagram de tu ficha",
       "obs": "En la sección de contacto de tu ficha, el enlace de Instagram lleva a @masajesterapeuticorpalma, y al abrirlo Instagram muestra “Perfil no disponible”. Tu cuenta activa es @r_palma.therapeutic_massage. ¿Es el nombre anterior de tu cuenta? Quien quiere ver tu trabajo antes de escribirte se topa con una puerta cerrada justo en el momento de decidir."
     },
     {
       "n": "La pauta",
       "estado": "warn",
-      "label": "Hoy no hay anuncios tuyos, pero sí de otros masajistas",
+      "label": "Ninguna tuya, varias de otros",
       "obs": "No encontramos anuncios activos a tu nombre en la Biblioteca de Anuncios de Meta, y nos contaste que todavía no inviertes. En cambio, hoy corren anuncios de al menos cinco negocios de masajes en Panamá, con mensajes como “Masajes relajantes desde $60” o “Agenda tu masaje terapéutico”. Quien ve esos anuncios agenda con quien le aparece, aunque tus opiniones sean mejores. Lo bueno es que llegas con algo que muchos de ellos no tienen: 22 clientes que ya hablaron por ti."
     }
   ],
