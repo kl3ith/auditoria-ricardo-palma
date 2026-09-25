@@ -299,12 +299,12 @@ const D = {
         "val": "0"
       },
       {
-        "lab": "Lo que nos contaste en el formulario",
-        "val": "Todavía no invierto"
+        "lab": "Inversión en pauta que nos contaste (“todavía no invierto”)",
+        "val": "$0"
       },
       {
         "lab": "Negocios de masajes con anuncios activos hoy en Panamá",
-        "val": "al menos 5"
+        "val": "5+"
       }
     ],
     "barra": 100,
@@ -551,7 +551,7 @@ D.kpis.forEach(o=>{const d=el('div','kpi');d.appendChild(el('div','k',o.k));d.ap
     p.setAttribute('fill','none');p.setAttribute('stroke',s.c);p.setAttribute('stroke-width',sw);svg.appendChild(p);ang+=sweep;});
   const t1=document.createElementNS(NS,'text');t1.setAttribute('x',cx);t1.setAttribute('y',cy-4);t1.setAttribute('text-anchor','middle');
   t1.setAttribute('font-size','40');t1.setAttribute('font-weight','800');t1.setAttribute('fill','#0F1417');t1.setAttribute('font-family','Roboto Mono, monospace');
-  t1.textContent=nf(tot/1000,1).replace(',0','')+'K';
+  t1.textContent=tot<1000?nf(tot,0):nf(tot/1000,1).replace(',0','')+'K';
   const t2=document.createElementNS(NS,'text');t2.setAttribute('x',cx);t2.setAttribute('y',cy+20);t2.setAttribute('text-anchor','middle');
   t2.setAttribute('font-size','12');t2.setAttribute('fill','#67707A');t2.textContent='seguidores';
   svg.appendChild(t1);svg.appendChild(t2);$('donut').appendChild(svg);
